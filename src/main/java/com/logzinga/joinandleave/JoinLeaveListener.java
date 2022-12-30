@@ -1,5 +1,6 @@
 package com.logzinga.joinandleave;
 
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -12,7 +13,7 @@ public class JoinLeaveListener implements Listener {
 
         Player player = e.getPlayer();
 
-        e.setQuitMessage(player.getDisplayName() + "is gone yippee!!!!");
+        e.setQuitMessage(ChatColor.YELLOW + player.getDisplayName() + " is gone yippee!!!!");
 
     }
 
