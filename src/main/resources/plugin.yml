@@ -1,0 +1,6 @@
+name: Joinandleave
+version: '${project.version}'
+main: com.logzinga.joinandleave.Joinandleave
+api-version: 1.19
+authors: [ logzinga ]
+description: Custom OwOCraft Join and Leave Messages
