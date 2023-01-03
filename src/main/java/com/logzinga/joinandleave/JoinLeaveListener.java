@@ -14,9 +14,9 @@ public class JoinLeaveListener implements Listener {
         Player player = e.getPlayer();
 
         if (player.hasPlayedBefore()){
-            e.setJoinMessage(ChatColor.YELLOW + player.getDisplayName() + " has returned to hell");
+            e.setJoinMessage(ChatColor.YELLOW + "" + ChatColor.BOLD + player.getDisplayName() + " has returned to hell");
         }else{
-            e.setJoinMessage(ChatColor.YELLOW + player.getDisplayName() + " has joined for the first time," + ChatColor.BOLD + " find them.");
+            e.setJoinMessage(ChatColor.YELLOW + "" + ChatColor.BOLD + player.getDisplayName() + " has joined for the first time," + ChatColor.BOLD + " find them.");
         }
     }
 
@@ -25,7 +25,7 @@ public class JoinLeaveListener implements Listener {
 
         Player player = e.getPlayer();
 
-        e.setQuitMessage(ChatColor.YELLOW + player.getDisplayName() + " is gone yippee!!!!");
+        e.setQuitMessage(ChatColor.YELLOW + "" + ChatColor.BOLD + player.getDisplayName() + " is gone yippee!!!!");
 
     }
 
